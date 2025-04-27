@@ -24,7 +24,7 @@ nav {
 }
 
 .logo {
-  width: clamp(100px, 10vw + 10px, 500px);
+  width: clamp(170px, 10vw + 10px, 500px);
 }
 
 svg path {

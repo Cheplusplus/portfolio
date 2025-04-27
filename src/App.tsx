@@ -7,12 +7,18 @@ import CountdownContainer from "./components/Countdown/Container";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark" | "system">("light");
+  const [page, setPage] = useState<"payment" | "countdown">("countdown");
+
+  const pages = {
+    countdown: <CountdownContainer />,
+    payment: <PaymentContainer />,
+  };
   return (
     <div data-theme={theme} id="container">
       <Header setTheme={setTheme} />
       <Background theme={theme} />
-      <PaymentContainer />
-      {/* <CountdownContainer /> */}
+      <button onClick={() => setPage(page === "payment" ? "countdown" : "payment")}>Switch page</button>
+      {pages[page]}
     </div>
   );
 }

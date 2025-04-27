@@ -1,5 +1,6 @@
 import timeCards from "../../assets/Group 3 Copy.svg";
 import { useTimeToEndOfMonth } from "../../lib/useTimeToEndOfMonth";
+import { motion } from "motion/react";
 
 /**
  * This component returns the time card objects for displaying time till end
@@ -29,7 +30,9 @@ const TimeCardHolder = () => {
         <div className="time-card-outer" key={i}>
           <div className="time-card">
             <img className="time-card-img" src={timeCards}></img>
-            <span className="time">{time}</span>
+            <motion.span initial={{ y: "-10vh" }} animate={{ y: "0" }} className="time">
+              {time}
+            </motion.span>
           </div>
           <p className="time-card-label">{timeLabels[i].toUpperCase()}</p>
         </div>

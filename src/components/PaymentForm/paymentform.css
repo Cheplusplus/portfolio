@@ -4,17 +4,20 @@
   flex-direction: row;
   gap: 8rem;
   align-items: center;
+  flex-wrap: wrap;
+  /* padding: 1rem; */
 }
 
 .content {
   color: var(--text-primary);
+  max-width: 420px;
 }
 
 .cards-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: max-content + 30px;
+  min-width: min-content;
 }
 
 form {
@@ -123,7 +126,7 @@ input:focus {
 .card-number {
   top: 35%;
   left: 10%;
-  font-size: 25px;
+  font-size: clamp(5px, 2.5vw + 10px, 25px);
   line-height: 36px;
   /* identical to box height */
   letter-spacing: 3.42222px;
@@ -153,7 +156,7 @@ input:focus {
 .cvc-ui {
   text-align: left;
   left: 80%;
-  top: calc(40% - 18px / 2);
+  top: calc(43% - 18px / 2);
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 2px;
@@ -162,7 +165,7 @@ input:focus {
 
 .stripes {
   position: relative;
-  left: 0;
+  left: 43px;
   top: -30%;
 }
 
@@ -191,7 +194,21 @@ input:focus {
 }
 
 @media (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
   .cards-container {
-    display: none;
+    gap: 0;
+  }
+  .greyCardContainer {
+    margin-top: -100px;
+    z-index: -99;
+  }
+}
+
+@media (max-width: 469px) {
+  .container {
+    padding: 1rem;
   }
 }

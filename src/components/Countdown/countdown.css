@@ -37,13 +37,6 @@
   width: 100%;
 }
 
-.main-text {
-  color: var(--text-primary);
-  letter-spacing: 0.5vw;
-  font-size: 1.5vw;
-  text-align: center;
-}
-
 .social-icons {
   position: relative;
   display: flex;

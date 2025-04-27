@@ -10,6 +10,7 @@
   --text-primary-inverted: black;
   --text-secondary-inverted: grey;
   background-color: #242424;
+  min-width: 450px;
 }
 
 [data-theme="dark"] {
@@ -33,7 +34,7 @@ button {
 .main-text {
   color: var(--text-primary);
   letter-spacing: 0.5vw;
-  font-size: 1.5vw;
+  font-size: clamp(30pt, 1.5vw, 100pt);
   text-align: center;
 }
 
