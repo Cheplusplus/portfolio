@@ -1,0 +1,42 @@
+:root {
+  /* Light Mode */
+  --primary-color: blue;
+  --secondary-color: green;
+  --surface: white;
+  --second-surface: grey;
+  --text-primary: rgb(10, 23, 33);
+
+  --text-secondary: grey;
+  --text-primary-inverted: black;
+  --text-secondary-inverted: grey;
+  background-color: #242424;
+}
+
+[data-theme="dark"] {
+  /* Dark Mode */
+  --primary-color: red;
+  --text-primary: wheat;
+}
+
+button {
+  background-color: rgba(1, 1, 1, 0);
+  border: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.main-text {
+  color: var(--text-primary);
+  letter-spacing: 0.5vw;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+body {
+  background-color: transparent;
+}

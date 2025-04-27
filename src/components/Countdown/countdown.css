@@ -1,0 +1,87 @@
+.time-card-holder {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.time-card {
+  position: relative;
+  font-size: clamp(50pt, 10vw + 10px, 80pt);
+  font-weight: 600;
+  margin: 0 15px;
+  color: #fb5e84;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-card-label {
+  font-size: clamp(15pt, 1vw + 10px, 18pt);
+  font-weight: 600;
+  color: #8385a9;
+}
+
+.time-card-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  position: absolute;
+}
+
+.time-card-img {
+  width: 100%;
+}
+
+.main-text {
+  color: var(--text-primary);
+  letter-spacing: 0.5vw;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.social-icons {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  z-index: 12;
+  gap: 3rem;
+}
+
+.social-logo {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.social-logo:hover {
+  filter: brightness(0) saturate(100) invert(65%) sepia(39%) saturate(5695%) hue-rotate(309deg) brightness(97%) contrast(103%);
+}
+
+@media (max-width: 480px) {
+  .time-card-holder {
+    width: 100%;
+  }
+
+  .time-card {
+    margin: 0 10px;
+  }
+
+  .time {
+    font-size: 9vw;
+  }
+
+  .time-card-label {
+    font-size: 2.5vw;
+  }
+
+  .main-text {
+    font-size: 7vw;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
