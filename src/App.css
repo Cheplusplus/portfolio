@@ -4,25 +4,25 @@
   --secondary-color: green;
   --surface: white;
   --second-surface: grey;
-  --text-primary: rgb(8, 19, 28);
-  --text-light: #e1e1e1;
-  --text-secondary: grey;
+  --text-primary: #060f16;
+  --text-light: #7d7d7d;
+  --text-secondary: rgb(0, 0, 0);
   --text-primary-inverted: black;
   --text-secondary-inverted: grey;
   background-color: #242424;
   min-width: 600px;
 
-  --border: #131627;
+  --border: #1a1d2d76;
 
-  --shadow-right: 10px 14px 0px 0px rgba(0, 0, 0, 0.073);
-  --shadow-left: 0px 14px 10px 0px rgba(0, 0, 0, 0.072);
+  --shadow-right: 5px 7px 0px 0px rgba(0, 0, 0, 0.073);
+  --shadow-left: -5px 7px 0px 0px rgba(0, 0, 0, 0.073);
 }
 
 [data-theme="dark"] {
   /* Dark Mode */
   --primary-color: red;
   --text-primary: wheat;
-
+  --text-secondary: wheat;
   --border: wheat;
 }
 
@@ -59,4 +59,9 @@ input {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+}
+
+p {
+  font-size: 13pt;
+  color: var(--text-secondary);
 }

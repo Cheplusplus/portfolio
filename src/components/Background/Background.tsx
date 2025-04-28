@@ -1,5 +1,5 @@
-import bg_light from "../../layered-peaks-haikei(2).svg";
-import bg_dark from "../../layered-peaks-haikei(1).svg";
+import bg_light from "../../assets/layered-peaks-haikei(2).svg";
+import bg_dark from "../../assets/layered-peaks-haikei(1).svg";
 import "./background.css";
 
 type BackgroundProps = {
