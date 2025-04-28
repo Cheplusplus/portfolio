@@ -111,6 +111,9 @@
   border-radius: 8px;
   cursor: pointer;
 }
+.menu > button {
+  background-color: #357597;
+}
 
 .p1-score {
   background: #31c3bd;

@@ -44,7 +44,7 @@ svg path {
   cursor: pointer;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
   .nav-container,
   #theme-toggle {
     display: none;
@@ -54,7 +54,7 @@ svg path {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1200px) {
   .menu-icon {
     display: none;
   }
