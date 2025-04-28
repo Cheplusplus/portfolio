@@ -5,10 +5,12 @@ import Header from "./components/Header/Header";
 import PaymentContainer from "./components/PaymentForm/Container";
 import CountdownContainer from "./components/Countdown/Container";
 import TicTacToeContainer from "./components/Tictactoe/Container";
+import Profile from "./components/Profile/Container";
+import Arrows from "./components/Arrows/Arrows";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark" | "system">("light");
-  const [page, setPage] = useState<"payment" | "countdown" | "tictactoe">("payment");
+  const [page, setPage] = useState<"payment" | "countdown" | "tictactoe" | "profile">("profile");
 
   // useEffect(() => {
   //   setTimeout(() => {
@@ -21,13 +23,14 @@ function App() {
     countdown: <CountdownContainer />,
     payment: <PaymentContainer />,
     tictactoe: <TicTacToeContainer />,
+    profile: <Profile />,
   };
   return (
     <div data-theme={theme} id="container">
       <Header setTheme={setTheme} />
       <Background theme={theme} />
-
-      {pages[page]}
+      <div id="page-container">{pages[page]}</div>
+      <Arrows setPage={setPage} />
     </div>
   );
 }

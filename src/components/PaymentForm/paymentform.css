@@ -59,6 +59,7 @@ label {
 .flex-col {
   display: flex;
   flex-direction: column;
+  min-width: 0px;
 }
 
 input,
@@ -183,6 +184,7 @@ input:focus {
   background-color: #21092f;
   padding: 20px;
   color: var(--text-light);
+  border-radius: 8px;
 }
 
 .month,

@@ -61,7 +61,7 @@ const Header = ({ setTheme }: HeaderProps) => {
       <div className="flex-item">
         <nav className="nav-container">
           <li>Home</li>
-          <li>Portfolio</li>
+          <li>Projects</li>
           <li>Contact</li>
           <li>
             <button id="theme-toggle" onClick={() => setTheme((theme) => (theme === "dark" ? "light" : "dark"))}>

@@ -11,12 +11,19 @@
   --text-secondary-inverted: grey;
   background-color: #242424;
   min-width: 600px;
+
+  --border: #131627;
+
+  --shadow-right: 10px 14px 0px 0px rgba(0, 0, 0, 0.073);
+  --shadow-left: 0px 14px 10px 0px rgba(0, 0, 0, 0.072);
 }
 
 [data-theme="dark"] {
   /* Dark Mode */
   --primary-color: red;
   --text-primary: wheat;
+
+  --border: wheat;
 }
 
 button {
@@ -29,6 +36,12 @@ button {
   flex-direction: column;
   max-width: 1024px;
   margin: auto;
+  z-index: 1;
+}
+
+#page-container {
+  z-index: 1;
+  margin-top: 2rem;
 }
 
 .main-text {

@@ -14,8 +14,6 @@ const Container = () => {
       }}
       exit={{ opacity: 0 }}
       style={{
-        height: "100vh",
-        marginTop: "4rem",
         display: "flex",
         flexDirection: "column",
         gap: "3rem",

@@ -55,8 +55,9 @@ const Container = () => {
           display: "flex",
           flexDirection: "column",
           flexBasis: "60vh",
-          justifyContent: "space-evenly",
+          justifyContent: "flex-start",
           margin: "auto",
+          gap: "4rem",
         }}
       >
         <h2 className="main-text">NEED A STYLISH CHECKOUT?</h2>

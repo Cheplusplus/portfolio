@@ -1,0 +1,40 @@
+.arrow_container_right {
+  width: 150px;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  right: 0;
+  top: 0;
+  align-items: center;
+  z-index: 0;
+  background: linear-gradient(270deg, rgba(39, 112, 141, 0.261) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+
+.arrow_container_left {
+  width: 150px;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  align-items: center;
+  z-index: 0;
+  background: linear-gradient(90deg, rgba(39, 112, 141, 0.261) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+
+.arrow_right {
+  position: absolute;
+  right: 0;
+  width: clamp(100px, 5vw + 10px, 300px);
+  z-index: 99;
+}
+
+.arrow_left {
+  transform: rotate(0.5turn);
+  position: absolute;
+  left: 0;
+  width: clamp(100px, 5vw + 10px, 300px);
+  z-index: 99;
+}

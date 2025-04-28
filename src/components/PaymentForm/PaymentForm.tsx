@@ -61,7 +61,7 @@ const PaymentForm = ({ messages, setMessages, clearMessages, paymentSucceeded, u
   };
   const handleSubmit = (inputItems: Item[]) => {
     const newMessages: Message[] = [];
-    let JSONData: FormData = { name, cardNumber, month, year, CVC };
+    const JSONData: FormData = { name, cardNumber, month, year, CVC };
     inputItems.map((item) => {
       clearMessages(item.id);
       JSONData[item.id] = item.value;

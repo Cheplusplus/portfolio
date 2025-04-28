@@ -22,8 +22,9 @@ const Container = () => {
           backgroundSize: "cover",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-around",
+          justifyContent: "space-start",
           flexBasis: "50vh",
+          gap: "6rem",
         }}
       >
         <h2 className="main-text">LAUNCHING YOUR BUSINESS?</h2>

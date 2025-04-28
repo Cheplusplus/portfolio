@@ -5,10 +5,12 @@
   padding: 1rem;
   gap: 3rem;
   background-color: transparent;
+  z-index: 1;
 }
 
 li {
   margin: auto 0;
+  cursor: pointer;
 }
 
 nav {
@@ -39,6 +41,7 @@ svg path {
 #theme-toggle {
   min-width: 50px;
   min-height: 50px;
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {

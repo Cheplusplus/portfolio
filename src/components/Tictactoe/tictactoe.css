@@ -61,6 +61,7 @@
   display: flex;
   align-items: center;
   aspect-ratio: 1;
+  cursor: pointer;
 }
 
 .scorecard-holder {
@@ -79,15 +80,12 @@
   background: #0d3b39;
   border-radius: 15px;
   gap: 1rem;
+  font-size: 20pt;
+  font-weight: bold;
 }
 
 .scorecard > p > img {
   max-width: 32px;
-}
-
-.score {
-  font-weight: bold;
-  font-size: 20pt;
 }
 
 .modal {
@@ -169,13 +167,17 @@
   display: flex;
   justify-content: center;
   padding: 5px;
+  gap: 1rem;
 }
 
 .turn-indicator-img {
   filter: brightness(0) saturate(100%) invert(75%) sepia(7%) saturate(705%) hue-rotate(153deg) brightness(102%) contrast(85%);
-  width: 25px;
-  height: 25px;
+  width: 55px;
+  height: 55px;
   margin: auto 0;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .unselected-color {
