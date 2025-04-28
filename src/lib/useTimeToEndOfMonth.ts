@@ -16,26 +16,22 @@ import { getTimeBetweenDates } from "./getTimeBetweenDates";
  * @returns {Array<string>}
  * */
 export const useTimeToEndOfMonth = (delay: number) => {
-  /**
-   * Manages the state for the end date of the countdown
-   * @type {useState<Date>}
-   */
-  const [endDate, setEndDate] = useState(new Date());
+  let d = new Date();
+  d.setMonth(d.getMonth() + 1, 0);
+  d.setHours(0);
+  d.setMinutes(0);
+  d.setSeconds(0);
+  const [endDate, setEndDate] = useState(d);
 
-  /**
-   * Manages the state for the amount of time until the end of the month in
-   * Days, Hours, Minutes, Seconds
-   * @type {useState<Array<string>>}
-   */
   const [timeToEndOfMonth, setTimeToEndOfMonth] = useState(["0", "0", "0", "0"]);
 
   /**
    * Create an async function that runs once every <delay>ms and updates the
    * time to end of month.
    */
-  setInterval(() => {
+  setTimeout(() => {
     setTimeToEndOfMonth(getTimeBetweenDates(new Date(), endDate));
-  }, delay);
+  }, 1000);
 
   /**
    * Runs once on page load.
@@ -48,6 +44,7 @@ export const useTimeToEndOfMonth = (delay: number) => {
     d.setMinutes(0);
     d.setSeconds(0);
     setEndDate(d);
+    setTimeToEndOfMonth(getTimeBetweenDates(new Date(), d));
   }, []);
 
   return timeToEndOfMonth;

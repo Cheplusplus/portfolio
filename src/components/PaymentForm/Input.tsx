@@ -32,7 +32,7 @@ const Input = ({ inputID, value, defaultValue, setValue, setMessages, clearMessa
   return (
     <input
       type="text"
-      className={inputID}
+      className={inputID + " payment-input"}
       value={value}
       placeholder={defaultValue}
       maxLength={maxLength}

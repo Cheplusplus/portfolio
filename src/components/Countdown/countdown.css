@@ -8,7 +8,7 @@
 
 .time-card {
   position: relative;
-  font-size: clamp(50pt, 10vw + 10px, 80pt);
+  font-size: clamp(50pt, 10vw + 10px, 76pt);
   font-weight: 600;
   margin: 0 15px;
   color: #fb5e84;
@@ -31,6 +31,7 @@
 
 .time {
   position: absolute;
+  margin: 0;
 }
 
 .time-card-img {

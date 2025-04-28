@@ -1,14 +1,14 @@
-.container {
+.payment-container {
   padding-top: 2rem;
   display: flex;
   flex-direction: row;
   gap: 8rem;
   align-items: center;
   flex-wrap: wrap;
-  /* padding: 1rem; */
+  justify-content: center;
 }
 
-.content {
+.payment-content {
   color: var(--text-primary);
   max-width: 420px;
 }
@@ -66,10 +66,10 @@ label {
   display: block;
 }
 
-input {
+.payment-input {
   padding: 10px;
   font-size: 2vh;
-  color: lightgrey;
+  color: var(--text-secondary);
   margin: 20px 0;
   font-style: normal;
   font-weight: 500;
@@ -182,6 +182,7 @@ input:focus {
   width: 420px;
   background-color: #21092f;
   padding: 20px;
+  color: var(--text-light);
 }
 
 .month,
@@ -194,7 +195,7 @@ input:focus {
 }
 
 @media (max-width: 1080px) {
-  .container {
+  .payment-container {
     flex-direction: column;
     gap: 0;
   }
@@ -208,7 +209,7 @@ input:focus {
 }
 
 @media (max-width: 469px) {
-  .container {
+  .payment-container {
     padding: 1rem;
   }
 }

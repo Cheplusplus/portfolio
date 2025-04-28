@@ -4,13 +4,13 @@
   --secondary-color: green;
   --surface: white;
   --second-surface: grey;
-  --text-primary: rgb(10, 23, 33);
-
+  --text-primary: rgb(8, 19, 28);
+  --text-light: #e1e1e1;
   --text-secondary: grey;
   --text-primary-inverted: black;
   --text-secondary-inverted: grey;
   background-color: #242424;
-  min-width: 450px;
+  min-width: 600px;
 }
 
 [data-theme="dark"] {
@@ -40,4 +40,10 @@ button {
 
 body {
   background-color: transparent;
+}
+
+input {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }

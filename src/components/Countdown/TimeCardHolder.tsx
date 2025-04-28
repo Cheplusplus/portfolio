@@ -11,13 +11,14 @@ const TimeCardHolder = () => {
    * The update delay for the countdown timer
    * @type {number}
    */
-  const delay = 1000;
+  const delay: number = 1000;
   /**
    * The time remaining till the end of the month, represented as an Array
    * [Days, Hours, Mins, Secs]
    * @type {Array<number>}
    */
-  const timeToEndOfMonth = useTimeToEndOfMonth(delay);
+  const timeToEndOfMonth: Array<string> = useTimeToEndOfMonth(delay);
+
   /**
    * labels for the measures of time
    * @type {Array<string>}

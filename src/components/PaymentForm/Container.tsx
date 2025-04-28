@@ -46,7 +46,7 @@ const Container = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          duration: 5,
+          duration: 3,
           delay: 0,
           ease: [0, 0.71, 0.2, 1.01],
         }}
@@ -60,7 +60,7 @@ const Container = () => {
         }}
       >
         <h2 className="main-text">NEED A STYLISH CHECKOUT?</h2>
-        <div className="container flex-row">
+        <div className="payment-container flex-row">
           <div className="cards-container">
             <motion.div initial={{ x: "-50px" }} animate={{ x: 0 }} className="colorCardContainer">
               <img src={colorCard} className="colorCard" />
@@ -76,7 +76,7 @@ const Container = () => {
               <p className="cvc-ui card-text">{uiState.cvc.padEnd(3, "0")}</p>
             </motion.div>
           </div>
-          <div className="content">{!paymentSuccess ? <PaymentForm messages={messages} setMessages={setMessages} clearMessages={clearRecipientsMessages} paymentSucceeded={setPaymentSuccess} updateUI={updateUI} /> : <Success />}</div>
+          <div className="payment-content">{!paymentSuccess ? <PaymentForm messages={messages} setMessages={setMessages} clearMessages={clearRecipientsMessages} paymentSucceeded={setPaymentSuccess} updateUI={updateUI} /> : <Success />}</div>
         </div>
       </motion.div>
     </AnimatePresence>

@@ -12,7 +12,7 @@ const Container = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          duration: 5,
+          duration: 3,
           delay: 0,
           ease: [0, 0.71, 0.2, 1.01],
         }}
@@ -22,7 +22,7 @@ const Container = () => {
           backgroundSize: "cover",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-evenly",
+          justifyContent: "space-around",
           flexBasis: "50vh",
         }}
       >
