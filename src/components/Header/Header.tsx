@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import "./header.css";
 
 type HeaderProps = {
@@ -50,19 +51,18 @@ const Header = ({ setTheme }: HeaderProps) => {
             fill="#3a3a3a"
           />
         </svg>
-        {/* <svg xmlSpace="preserve" data-version="2" data-id="lg_osGD8ZuVNgxV2h5Bb1" viewBox="0 0 807 522" x="0" y="0">
-          <rect width="100%" height="100%" fill="transparent"></rect>
-          <path
-            fill="#3a3a3a"
-            d="M457.399 202.286a27.264 27.264 0 0 1-27.273 27.273H260.094a27.273 27.273 0 0 1-27.273-27.273V32.254a27.273 27.273 0 0 1 27.273-27.272h170.032a27.264 27.264 0 0 1 27.273 27.272zm53.898 278.485a27.264 27.264 0 0 1-27.272 27.264H313.992a27.264 27.264 0 0 1-27.272-27.264v-170.04a27.273 27.273 0 0 1 27.272-27.273h170.033a27.264 27.264 0 0 1 27.272 27.272zm-278.476 0a27.264 27.264 0 0 1-27.272 27.264H35.516a27.264 27.264 0 0 1-27.272-27.264v-170.04a27.273 27.273 0 0 1 27.272-27.273H205.55a27.264 27.264 0 0 1 27.272 27.272zm556.952 0a27.264 27.264 0 0 1-27.272 27.264H592.46a27.264 27.264 0 0 1-27.264-27.264v-170.04a27.264 27.264 0 0 1 27.264-27.273H762.5a27.264 27.264 0 0 1 27.273 27.272z"
-          ></path>
-        </svg> */}
       </div>
       <div className="flex-item">
         <nav className="nav-container">
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <NavLink to={"/"}>Home</NavLink>
+          </li>
+          <li>
+            <NavLink to={"projects"}>Projects</NavLink>
+          </li>
+          <li>
+            <NavLink to={"contact"}>Contact</NavLink>
+          </li>
           <li>
             <button id="theme-toggle" onClick={() => setTheme((theme) => (theme === "dark" ? "light" : "dark"))}>
               <svg fill="#000000" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xmlSpace="preserve">
