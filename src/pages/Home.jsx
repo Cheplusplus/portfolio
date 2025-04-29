@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import Background from "./components/Background/Background";
 import Header from "./components/Header/Header";
 import PaymentContainer from "./components/PaymentForm/Container";
@@ -8,9 +7,9 @@ import TicTacToeContainer from "./components/Tictactoe/Container";
 import Profile from "./components/Profile/Container";
 import Arrows from "./components/Arrows/Arrows";
 
-function App() {
-  const [theme, setTheme] = useState<"light" | "dark" | "system">("light");
-  const [page, setPage] = useState<"payment" | "countdown" | "tictactoe" | "profile">("profile");
+function Home() {
+  const [theme, setTheme] = (useState < "light") | "dark" | ("system" > "light");
+  const [page, setPage] = (useState < "payment") | "countdown" | "tictactoe" | ("profile" > "profile");
 
   const pages = {
     countdown: <CountdownContainer />,
@@ -28,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

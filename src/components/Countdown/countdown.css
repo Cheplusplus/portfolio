@@ -20,7 +20,7 @@
 .time-card-label {
   font-size: clamp(15pt, 1vw + 10px, 18pt);
   font-weight: 600;
-  color: #8385a9;
+  color: var(--text-light);
 }
 
 .time-card-outer {
@@ -49,6 +49,7 @@
 .social-logo {
   margin: 0 20px;
   cursor: pointer;
+  filter: saturate(100) hue-rotate(180deg) contrast(0.5);
 }
 
 .social-logo:hover {

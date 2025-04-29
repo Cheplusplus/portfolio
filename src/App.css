@@ -5,7 +5,7 @@
   --surface: white;
   --second-surface: grey;
   --text-primary: #060f16;
-  --text-light: #7d7d7d;
+  --text-light: #283848;
   --text-secondary: rgb(0, 0, 0);
   --text-primary-inverted: black;
   --text-secondary-inverted: grey;
@@ -26,6 +26,9 @@
   --text-secondary: wheat;
   --border: rgba(245, 222, 179, 0.144);
   --arrow-container: #27708d43;
+  --shadow-right: 5px 7px 0px 0px rgba(255, 255, 255, 0.023);
+  --shadow-left: -5px 7px 0px 0px rgba(255, 255, 255, 0.023);
+  --text-light: #7f7f7f;
 }
 
 button {
