@@ -12,11 +12,14 @@
   --arrow-container: #071d4d58;
   background-color: #242424;
   min-width: 600px;
+  --social-icon: #283848;
+  --social-icon-hover: rgb(110, 38, 0);
 
   --border: #1a1d2d76;
   --menu-change: 960px;
   --shadow-right: 5px 7px 0px 0px rgba(0, 0, 0, 0.073);
   --shadow-left: -5px 7px 0px 0px rgba(0, 0, 0, 0.073);
+  --card-bg: #97d2fc93;
 }
 
 [data-theme="dark"] {
@@ -29,6 +32,9 @@
   --shadow-right: 5px 7px 0px 0px rgba(255, 255, 255, 0.023);
   --shadow-left: -5px 7px 0px 0px rgba(255, 255, 255, 0.023);
   --text-light: #7f7f7f;
+  --card-bg: #3a516093;
+  --social-icon: #7f7f7f;
+  --social-icon-hover: rgb(40, 34, 206);
 }
 
 button {
@@ -69,4 +75,46 @@ input {
 p {
   font-size: 13pt;
   color: var(--text-secondary);
+}
+
+#projects_page_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.flex-grow {
+  flex-basis: 250px;
+}
+
+.flex-shrink {
+  flex-basis: 350px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  cursor: default;
+}
+
+a:hover {
+  color: var(--social-icon-hover);
+  cursor: pointer;
 }

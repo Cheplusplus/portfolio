@@ -3,7 +3,7 @@
  * @param {string} month
  * @returns {string}
  */
-export const monthFormatter = (month) => {
+export const monthFormatter = (month: string) => {
   return month.length === 1 ? month.padStart(2, "0") : month;
 };
 
@@ -12,7 +12,7 @@ export const monthFormatter = (month) => {
  * @param {string} cardNumber
  * @returns {string}
  */
-export const cardNumberFormatter = (cardNumber) => {
+export const cardNumberFormatter = (cardNumber: string) => {
   cardNumber = cardNumber.split(" ").join("");
   let pattern = /(.{4})(?! )/g;
   let outputString = cardNumber.replace(pattern, "$1 ");

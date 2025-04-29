@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "../Card/Card";
 import styles from "./profile.module.css";
 import next from "../../assets/Next.js.svg";
 import django from "../../assets/Django.svg";
@@ -6,7 +6,7 @@ import react from "../../assets/React.svg";
 import python from "../../assets/Python.svg";
 import tailwind from "../../assets/Tailwind CSS.svg";
 import vite from "../../assets/Vite.js.svg";
-import html from "../../assets/HTML5.svg";
+import figma from "../../assets/Figma.svg";
 import git from "../../assets/Git.svg";
 import ps from "../../assets/PostgresSQL.svg";
 import linux from "../../assets/Linux.svg";
@@ -15,7 +15,7 @@ import ts from "../../assets/TypeScript.svg";
 const Container = () => {
   return (
     <div className={styles.profile_container}>
-      <Card isLeft={true}>
+      <Card isLeft>
         <div className={styles.profile_img_container}>
           <img className={styles.profile_img} src={"/Screenshot 2025-04-22 142535.png"}></img>
           <a target="_blank" href="https://www.linkedin.com/in/che-overmeyer-1632a394/">
@@ -35,7 +35,7 @@ const Container = () => {
           and real-world problem-solving.
         </p>
       </Card>
-      <Card isLeft={false}>
+      <Card>
         <h2 className={styles.profile_heading2}>PREFERED TECH</h2>
         <div className={styles.icon_container}>
           <img src={ts} />
@@ -44,14 +44,14 @@ const Container = () => {
           <img src={python} />
           <img src={django} />
           <img src={tailwind} />
-          <img src={html} />
+          <img src={figma} />
           <img src={vite} />
           <img src={ps} />
           <img src={git} />
           <img src={linux} />
         </div>
       </Card>
-      <Card isLeft={true}>
+      <Card isLeft>
         <h2 className={styles.profile_heading2}>EXPERIENCE</h2>
         <ul className={styles.experience_list}>
           <li>

@@ -61,7 +61,7 @@ const Container = () => {
         }}
       >
         <h2 className="main-text">NEED A STYLISH CHECKOUT?</h2>
-        <div className="payment-container flex-row">
+        <div className="payment-container flex-box">
           <div className="cards-container">
             <motion.div initial={{ x: "-50px" }} animate={{ x: 0 }} className="colorCardContainer">
               <img src={colorCard} className="colorCard" />

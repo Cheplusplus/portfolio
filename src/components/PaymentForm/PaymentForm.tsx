@@ -128,11 +128,11 @@ const PaymentForm = ({ messages, setMessages, clearMessages, paymentSucceeded, u
       />
       <Messages messages={messages} inputID="cardNumber" />
 
-      <div className="flex-row">
+      <div className="flex-box">
         <div>
           <label>EXP. DATE (MM/YY)</label>
           <div className="flex-col width100">
-            <div className="flex-row">
+            <div className="flex-box">
               <Input inputID="month" value={month} maxLength={2} defaultValue="MM" setValue={setMonth} valueFormatter={monthFormatter} validationFns={[isOnlyNumbers]} setMessages={setMessages} clearMessages={clearMessages} updateUI={updateUI} />
               <Input inputID="year" value={year} defaultValue="YY" setValue={setYear} maxLength={2} validationFns={[isOnlyNumbers]} setMessages={setMessages} clearMessages={clearMessages} updateUI={updateUI} />
             </div>

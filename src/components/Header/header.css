@@ -13,6 +13,10 @@ li {
   cursor: pointer;
 }
 
+li:hover {
+  color: var(--social-icon-hover);
+}
+
 nav {
   display: flex;
   list-style-type: none;
@@ -42,6 +46,12 @@ svg path {
   min-width: 50px;
   min-height: 50px;
   cursor: pointer;
+  stroke: var(--social-icon);
+}
+
+.theme-toggle:hover > path {
+  fill: var(--social-icon-hover);
+  stroke: var(--social-icon-hover);
 }
 
 @media (max-width: 1200px) {

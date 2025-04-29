@@ -16,12 +16,15 @@ import { getTimeBetweenDates } from "./getTimeBetweenDates";
  * @returns {Array<string>}
  * */
 export const useTimeToEndOfMonth = (delay: number) => {
-  let d = new Date();
-  d.setMonth(d.getMonth() + 1, 0);
-  d.setHours(0);
-  d.setMinutes(0);
-  d.setSeconds(0);
-  const [endDate, setEndDate] = useState(d);
+  const getNewDate = () => {
+    let d = new Date();
+    d.setMonth(d.getMonth() + 1, 0);
+    d.setHours(0);
+    d.setMinutes(0);
+    d.setSeconds(0);
+    return d;
+  };
+  const [endDate, setEndDate] = useState(getNewDate());
 
   const [timeToEndOfMonth, setTimeToEndOfMonth] = useState(["0", "0", "0", "0"]);
 
@@ -38,11 +41,8 @@ export const useTimeToEndOfMonth = (delay: number) => {
    * Sets the endDate variable to the last day of the current month
    */
   useEffect(() => {
-    let d = new Date();
-    d.setMonth(d.getMonth() + 1, 0);
-    d.setHours(0);
-    d.setMinutes(0);
-    d.setSeconds(0);
+    const d = getNewDate();
+    console.log(new Date());
     setEndDate(d);
     setTimeToEndOfMonth(getTimeBetweenDates(new Date(), d));
   }, []);
