@@ -13,7 +13,7 @@ li {
   cursor: pointer;
 }
 
-li:hover {
+.nav-container li:hover {
   color: var(--social-icon-hover);
 }
 

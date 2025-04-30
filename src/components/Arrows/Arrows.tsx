@@ -1,23 +1,17 @@
-import { Dispatch, useEffect, useState } from "react";
 import styles from "./arrow.module.css";
 import { motion, AnimatePresence } from "motion/react";
 
 type ArrowsProps = {
-  setPage: Dispatch<React.SetStateAction<"payment" | "countdown" | "tictactoe" | "profile">>;
+  gotoNextPage: () => void;
+  gotoPrevPage: () => void;
 };
-const Arrows = ({ setPage }: ArrowsProps) => {
-  const pageNames: ["profile", "payment", "countdown", "tictactoe"] = ["profile", "payment", "countdown", "tictactoe"];
-  const [pageNumber, setPageNumber] = useState<number>(0);
-
-  useEffect(() => {
-    setPage(pageNames[pageNumber]);
-  });
+const Arrows = ({ gotoNextPage, gotoPrevPage }: ArrowsProps) => {
   return (
     <AnimatePresence>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className={styles.container}>
         <div
           onClick={() => {
-            setPageNumber(pageNumber < pageNames.length - 1 ? pageNumber + 1 : 0);
+            gotoNextPage();
           }}
           className={styles.arrow_container_right}
         >
@@ -30,7 +24,7 @@ const Arrows = ({ setPage }: ArrowsProps) => {
         </div>
         <div
           onClick={() => {
-            setPageNumber(pageNumber > 0 ? pageNumber - 1 : pageNames.length - 1);
+            gotoPrevPage();
           }}
           className={styles.arrow_container_left}
         >
