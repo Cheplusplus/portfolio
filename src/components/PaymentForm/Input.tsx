@@ -1,6 +1,6 @@
 //@ts-check
 
-import React, { Dispatch } from "react";
+import { Dispatch } from "react";
 import { validate } from "../../lib/validator";
 
 type Message = {

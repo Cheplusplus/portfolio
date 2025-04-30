@@ -1,5 +1,4 @@
-import { Dispatch } from "react";
-import { useState } from "react";
+import { Dispatch, useState } from "react";
 import { isOnlyNumbers, isOnlyLetters, cannotBeBlank, isLen3 } from "../../lib/inputValidators";
 import { validate } from "../../lib/validator";
 import Input from "./Input";

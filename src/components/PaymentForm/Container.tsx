@@ -3,7 +3,6 @@ import PaymentForm from "./PaymentForm.tsx";
 import Success from "./Success.js";
 import colorCard from "../../assets/colorCard.svg";
 import greyCard from "../../assets/greyCard.svg";
-// import gradBG from "../../assets/gradBG.svg";
 import stripes from "../../assets/stripes.svg";
 import { cardNumberFormatter } from "../../lib/formatters.ts";
 import "./paymentform.css";

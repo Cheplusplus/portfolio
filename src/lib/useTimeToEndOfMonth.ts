@@ -3,12 +3,6 @@ import { useState, useEffect } from "react";
 import { getTimeBetweenDates } from "./getTimeBetweenDates";
 
 /**
- * A template for useState JSDocs
- * @template T
- * @typedef {[T, import('react').Dispatch<import('react').SetStateAction<T>>]} useState
- */
-
-/**
  * This hook runs once when the page loads and creates an interval which will run once
  * every <delay>ms and return the time remaining till the end of the month,
  * represented as an Array [Days, Hours, Mins, Secs].
