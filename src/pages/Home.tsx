@@ -10,7 +10,7 @@ function Home() {
   const [page, setPage] = useState<"payment" | "countdown" | "tictactoe" | "profile">("profile");
 
   const handlers = useSwipeable({
-    onSwiped: () => setPage("tictactoe"),
+    onSwipedLeft: () => setPage("tictactoe"),
   });
 
   const pages = {
@@ -21,7 +21,7 @@ function Home() {
   };
   return (
     <>
-      <Arrows setPage={setPage} />
+      {/* <Arrows setPage={setPage} /> */}
       <div {...handlers} id="page-container">
         {pages[page]}
       </div>
