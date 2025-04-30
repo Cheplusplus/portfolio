@@ -35,11 +35,12 @@ function Home() {
   });
 
   const pages = {
-    countdown: <CountdownContainer />,
-    payment: <PaymentContainer />,
+    countdown: <PaymentContainer />,
+    payment: <CountdownContainer />,
     tictactoe: <TicTacToeContainer />,
     profile: <Profile />,
   };
+
   return (
     <>
       <Arrows gotoNextPage={gotoNextPage} gotoPrevPage={gotoPrevPage} />

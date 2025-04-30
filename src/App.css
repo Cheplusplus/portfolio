@@ -5,7 +5,7 @@
   --surface: white;
   --second-surface: grey;
   --text-primary: #060f16;
-  --text-light: #283848;
+  --text-light: #b4b8bc;
   --text-secondary: rgb(0, 0, 0);
   --text-primary-inverted: black;
   --text-secondary-inverted: grey;
@@ -49,6 +49,7 @@ button {
   max-width: 1024px;
   margin: auto;
   z-index: 1;
+  overflow: hidden;
 }
 
 #page-container {
