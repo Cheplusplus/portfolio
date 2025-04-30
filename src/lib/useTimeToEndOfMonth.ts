@@ -34,7 +34,7 @@ export const useTimeToEndOfMonth = (delay: number) => {
    */
   setTimeout(() => {
     setTimeToEndOfMonth(getTimeBetweenDates(new Date(), endDate));
-  }, 1000);
+  }, delay);
 
   /**
    * Runs once on page load.

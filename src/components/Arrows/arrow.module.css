@@ -24,6 +24,13 @@
   cursor: pointer;
 }
 
+.arrow_container_right:hover {
+  background: linear-gradient(270deg, var(--arrow-container-hover) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.arrow_container_left:hover {
+  background: linear-gradient(90deg, var(--arrow-container-hover) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 .arrow_right {
   position: absolute;
   right: 0;

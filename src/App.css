@@ -10,6 +10,7 @@
   --text-primary-inverted: black;
   --text-secondary-inverted: grey;
   --arrow-container: #071d4d58;
+  --arrow-container-hover: #115f2f4f;
   background-color: #242424;
   min-width: 600px;
   --social-icon: #283848;
@@ -95,7 +96,7 @@ p {
 .center {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .heading {

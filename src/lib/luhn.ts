@@ -1,15 +1,14 @@
 /**
  *
- * @param {string} idNum
+ * @param {string[]} idNum
  * @returns {number}
  */
-const getCheckDigit = (idNum) => {
+const getCheckDigit = (idNum: string[]) => {
   let check = "";
 
   for (let i = idNum.length - 2; i >= 0; i--) {
-    let x = idNum[i];
+    let x = parseInt(idNum[i]);
     if (i % 2 === 0) {
-      x = parseInt(x);
       x *= 2;
     }
 
@@ -29,11 +28,9 @@ const getCheckDigit = (idNum) => {
  * @param {string} payload
  * @returns {true|string}
  */
-export const checkSum = (payload) => {
-  payload = payload.split(" ").join("");
-  return getCheckDigit(payload) === parseInt(payload.slice(-1))
-    ? true
-    : "Card Number is incorrect";
+export const checkSum = (payload: string) => {
+  const splitPayload = payload.split(" ").join("");
+  return getCheckDigit([...splitPayload]) === parseInt(payload.slice(-1)) ? true : "Card Number is incorrect";
 };
 
 // 9710064503105395

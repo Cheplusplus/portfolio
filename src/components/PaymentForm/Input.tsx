@@ -44,7 +44,7 @@ const Input = ({ inputID, value, defaultValue, setValue, setMessages, clearMessa
         e.target.classList.remove("selected");
       }}
       onChange={(e) => {
-        setValue((v) => e.target.value);
+        setValue(() => e.target.value);
         updateUI !== null ? updateUI(inputID, e.target.value) : null;
         if (validationFns.length === 0) {
           return;
