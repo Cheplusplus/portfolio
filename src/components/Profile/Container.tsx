@@ -30,7 +30,7 @@ const Container = () => {
           </a>
         </div>
         <h2 className={styles.profile_heading}>SOFTWARE DEVELOPER</h2>
-        <p>
+        <p className={styles.profile_text}>
           Full-stack web developer and instructor specializing in JavaScript, Python, and modern frameworks like Next.js and Django. I build scalable applications, lead development teams, and create technical content focused on clean code, great UX,
           and real-world problem-solving.
         </p>
@@ -58,19 +58,19 @@ const Container = () => {
             <h3 className={styles.experience_heading}>CODESPACE ACADEMY</h3>
             <ul className={styles.list}>
               <li>
-                <p>Led and mentored development teams, guiding students through real-world projects like building e-commerce stores with Next.js and modern web stacks.</p>
+                <p className={styles.profile_text}>Led and mentored development teams, guiding students through real-world projects like building e-commerce stores with Next.js and modern web stacks.</p>
               </li>
               <li>
-                <p>Designed and delivered technical course content, covering topics such as full-stack development, software architecture, and best coding practices.</p>
+                <p className={styles.profile_text}>Designed and delivered technical course content, covering topics such as full-stack development, software architecture, and best coding practices.</p>
               </li>
               <li>
-                <p>Conducted technical interviews and assessments to evaluate student readiness, giving actionable feedback to help them grow into professional developers.</p>
+                <p className={styles.profile_text}>Conducted technical interviews and assessments to evaluate student readiness, giving actionable feedback to help them grow into professional developers.</p>
               </li>
               <li>
-                <p>Introduced students to CI/CD pipelines and DevOps fundamentals, helping them understand the full software lifecycle beyond just writing code.</p>
+                <p className={styles.profile_text}>Introduced students to CI/CD pipelines and DevOps fundamentals, helping them understand the full software lifecycle beyond just writing code.</p>
               </li>
               <li>
-                <p>Managed and supported a team of coaches, fostering collaboration, improving teaching standards, and ensuring a high-quality learning experience for all students.</p>
+                <p className={styles.profile_text}>Managed and supported a team of coaches, fostering collaboration, improving teaching standards, and ensuring a high-quality learning experience for all students.</p>
               </li>
             </ul>
           </li>
@@ -78,19 +78,19 @@ const Container = () => {
             <h3 className={styles.experience_heading}>SKILLADEMIA</h3>
             <ul className={styles.list}>
               <li>
-                <p>Produced and recorded programming course content, making complex technical topics accessible for learners of all levels.</p>
+                <p className={styles.profile_text}>Produced and recorded programming course content, making complex technical topics accessible for learners of all levels.</p>
               </li>
               <li>
-                <p>Created educational resources like slide decks, coding examples, and quizzes to reinforce learning and improve course engagement.</p>
+                <p className={styles.profile_text}>Created educational resources like slide decks, coding examples, and quizzes to reinforce learning and improve course engagement.</p>
               </li>
               <li>
-                <p>Wrote clear, concise technical scripts, ensuring explanations were accurate, beginner-friendly, and aligned with industry standards.</p>
+                <p className={styles.profile_text}>Wrote clear, concise technical scripts, ensuring explanations were accurate, beginner-friendly, and aligned with industry standards.</p>
               </li>
               <li>
-                <p>Researched and incorporated current tech trends, keeping course material up-to-date with evolving tools and best practices.</p>
+                <p className={styles.profile_text}>Researched and incorporated current tech trends, keeping course material up-to-date with evolving tools and best practices.</p>
               </li>
               <li>
-                <p>Worked independently to manage project timelines and deliverables, maintaining high-quality production standards while meeting deadlines.</p>
+                <p className={styles.profile_text}>Worked independently to manage project timelines and deliverables, maintaining high-quality production standards while meeting deadlines.</p>
               </li>
             </ul>
           </li>

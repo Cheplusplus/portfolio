@@ -12,7 +12,7 @@
   --arrow-container: #071d4d58;
   --arrow-container-hover: #115f2f4f;
   background-color: #242424;
-  min-width: 600px;
+
   --social-icon: #283848;
   --social-icon-hover: rgb(110, 38, 0);
 
@@ -65,7 +65,6 @@ button {
 
 body {
   background-color: transparent;
-  width: 100%;
 }
 
 input {
