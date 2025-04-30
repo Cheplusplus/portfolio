@@ -3,7 +3,7 @@ import PaymentContainer from "../components/PaymentForm/Container";
 import CountdownContainer from "../components/Countdown/Container";
 import TicTacToeContainer from "../components/Tictactoe/Container";
 import Profile from "../components/Profile/Container";
-import Arrows from "../components/Arrows/Arrows";
+// import Arrows from "../components/Arrows/Arrows";
 import { useSwipeable } from "react-swipeable";
 
 function Home() {
