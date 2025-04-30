@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import Background from "./components/Background/Background";
 import Header from "./components/Header/Header";
 import { Outlet } from "react-router";
 import bg_light from "./assets/layered-peaks-haikei(2).svg";
