@@ -15,31 +15,30 @@
 }
 
 .icon_container > img {
-  width: clamp(30px, 2vw + 1px, 50px);
+  width: clamp(35px, 2vw + 1px, 50px);
 }
 
 .profile_img {
-  max-width: clamp(50px, 1vw + 1px, 120px);
-  max-height: 120px;
+  max-width: clamp(80px, 1vw + 1px, 120px);
   border-radius: 50%;
 }
 
 .profile_heading {
-  font-size: clamp(20pt, 2vw + 1px, 40pt);
+  font-size: clamp(28pt, 2vw + 1px, 40pt);
   font-weight: bold;
 }
 
 .profile_heading2 {
-  font-size: clamp(17pt, 2vw + 1px, 30pt);
+  font-size: clamp(22pt, 2vw + 1px, 30pt);
   font-weight: bold;
 }
 
 .profile_text {
-  font-size: clamp(10pt, 2vw + 1px, 13pt);
+  font-size: clamp(11pt, 2vw + 1px, 13pt);
 }
 
 .experience_heading {
-  font-size: clamp(10pt, 1vw + 1px, 20pt);
+  font-size: clamp(13pt, 1vw + 1px, 20pt);
   font-weight: bold;
 }
 
