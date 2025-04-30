@@ -4,9 +4,14 @@ import CountdownContainer from "../components/Countdown/Container";
 import TicTacToeContainer from "../components/Tictactoe/Container";
 import Profile from "../components/Profile/Container";
 import Arrows from "../components/Arrows/Arrows";
+import { useSwipeable } from "react-swipeable";
 
 function Home() {
   const [page, setPage] = useState<"payment" | "countdown" | "tictactoe" | "profile">("profile");
+
+  const handlers = useSwipeable({
+    onSwiped: () => setPage("tictactoe"),
+  });
 
   const pages = {
     countdown: <CountdownContainer />,
@@ -17,7 +22,9 @@ function Home() {
   return (
     <>
       <Arrows setPage={setPage} />
-      <div id="page-container">{pages[page]}</div>
+      <div {...handlers} id="page-container">
+        {pages[page]}
+      </div>
     </>
   );
 }
