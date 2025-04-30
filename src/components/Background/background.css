@@ -1,9 +1,13 @@
 .bg_img {
-  position: fixed;
+  /* position: fixed;
   min-width: 100vw;
   height: 100%;
   bottom: 0;
   left: 0;
   object-fit: cover;
-  z-index: -99;
+  z-index: -99; */
+  position: fixed;
+  object-fit: cover;
+  height: 100%;
+  background-size: 100% auto; /* Fill width, retain proportions */
 }
