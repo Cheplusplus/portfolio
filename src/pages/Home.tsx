@@ -21,7 +21,7 @@ function Home() {
   };
 
   const gotoPrevPage = () => {
-    if (pageNames.indexOf(page) - 1 <= 0) {
+    if (pageNames.indexOf(page) - 1 < 0) {
       setPage("tictactoe");
       return;
     }
