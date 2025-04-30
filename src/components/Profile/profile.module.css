@@ -25,17 +25,17 @@
 }
 
 .profile_heading {
-  font-size: 40pt;
+  font-size: clamp(30pt, 1vw + 1px, 40pt);
   font-weight: bold;
 }
 
 .profile_heading2 {
-  font-size: 30pt;
+  font-size: clamp(20pt, 1vw + 1px, 30pt);
   font-weight: bold;
 }
 
 .experience_heading {
-  font-size: 20pt;
+  font-size: clamp(10pt, 1vw + 1px, 20pt);
   font-weight: bold;
 }
 
