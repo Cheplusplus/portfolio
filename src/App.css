@@ -65,6 +65,7 @@ button {
 
 body {
   background-color: transparent;
+  width: 100vw;
 }
 
 input {
