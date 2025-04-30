@@ -56,7 +56,7 @@ const Container = () => {
           flexBasis: "60vh",
           justifyContent: "flex-start",
           margin: "auto",
-          gap: "4rem",
+          gap: "1rem",
         }}
       >
         <h2 className="main-text">NEED A STYLISH CHECKOUT?</h2>

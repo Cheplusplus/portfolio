@@ -1,7 +1,7 @@
 .bg_img {
   position: fixed;
   min-width: 100vw;
-  height: 100vh;
+  height: 100%;
   bottom: 0;
   left: 0;
   object-fit: cover;
