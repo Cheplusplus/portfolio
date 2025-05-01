@@ -50,10 +50,10 @@ svg path {
 }
 
 @media (hover: hover) {
-  .theme-toggle:hover > path {
+  /* .theme-toggle:hover > path {
     fill: var(--social-icon-hover);
     stroke: var(--social-icon-hover);
-  }
+  } */
 }
 
 @media (max-width: 1200px) {
