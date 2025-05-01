@@ -1,13 +1,13 @@
 :root {
   /* Light Mode */
-  --primary-color: blue;
+  --primary-color: rgba(0, 132, 220, 0.967);
   --secondary-color: green;
   --surface: white;
   --second-surface: grey;
   --text-primary: #060f16;
   --text-light: #b4b8bc;
   --text-secondary: rgb(0, 0, 0);
-  --text-primary-inverted: black;
+  --text-primary-inverted: rgb(65, 65, 65);
   --text-secondary-inverted: grey;
   --arrow-container: #071d4d58;
   --arrow-container-hover: #115f2f4f;
@@ -25,7 +25,7 @@
 
 [data-theme="dark"] {
   /* Dark Mode */
-  --primary-color: red;
+  --primary-color: rgba(33, 0, 91, 0.963);
   --text-primary: wheat;
   --text-secondary: wheat;
   --border: rgba(245, 222, 179, 0.144);
@@ -36,6 +36,7 @@
   --card-bg: #3a516093;
   --social-icon: #7f7f7f;
   --social-icon-hover: rgb(40, 34, 206);
+  --text-primary-inverted: rgb(69, 69, 69);
 }
 
 button {
@@ -116,7 +117,45 @@ span {
   cursor: default;
 }
 
-a:hover {
-  color: var(--social-icon-hover);
+@media (hover: hover) {
+  a:hover {
+    color: var(--social-icon-hover);
+    cursor: pointer;
+  }
+}
+
+.nav-container-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#theme-toggle-modal {
+  min-width: 50px;
+  min-height: 50px;
   cursor: pointer;
+  stroke: var(--text-primary);
+}
+
+.theme-toggle path {
+  fill: transparent;
+}
+
+.swipe-icon-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 70px;
+  padding: 1rem;
+}
+
+.swipe-icon path {
+  fill: var(--social-icon);
+}
+
+@media (min-width: 1200px) {
+  .swipe-icon-container {
+    display: none;
+  }
 }

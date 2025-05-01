@@ -9,7 +9,7 @@ const TurnIndicator = ({ isCrossesTurn }: TurnIndicatorProps) => {
   return (
     <div className="flex-3 large-text turn-indicator-holder">
       <img src={isCrossesTurn ? xLogo : oLogo} className="turn-indicator-img" />
-      <p>TURN</p>
+      <h2>TURN</h2>
     </div>
   );
 };

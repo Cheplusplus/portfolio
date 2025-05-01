@@ -3,8 +3,9 @@ import "./header.css";
 
 type HeaderProps = {
   setTheme: React.Dispatch<React.SetStateAction<"light" | "dark" | "system">>;
+  openModal: () => void;
 };
-const Header = ({ setTheme }: HeaderProps) => {
+const Header = ({ setTheme, openModal }: HeaderProps) => {
   return (
     <div className="header-container">
       <div className="logo flex-item">
@@ -73,7 +74,7 @@ const Header = ({ setTheme }: HeaderProps) => {
           </li>
         </nav>
         <div className="flex-item">
-          <button className="menu-icon">
+          <button className="menu-icon" onClick={openModal}>
             <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill="#000000"

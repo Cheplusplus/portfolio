@@ -72,6 +72,7 @@
   margin: 0 auto;
   gap: 2rem;
   max-width: 100%;
+  color: antiquewhite;
 }
 
 .scorecard {
@@ -85,6 +86,10 @@
   gap: 1rem;
   font-size: 20pt;
   font-weight: bold;
+}
+
+.scorecard p {
+  color: antiquewhite;
 }
 
 .scorecard > p > img {
@@ -175,6 +180,10 @@
   justify-content: center;
   padding: 5px;
   gap: 1rem;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-primary);
 }
 
 .turn-indicator-img {
