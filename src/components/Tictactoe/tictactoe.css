@@ -13,7 +13,7 @@
 
 .game-header {
   display: flex;
-  margin: 0 auto;
+
   justify-content: space-evenly;
   padding: 1rem;
   gap: clamp(1rem, 2vw + 1px, 7rem);
@@ -50,8 +50,7 @@
 
 .tile-marker {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: clamp(40px, 80%, 100px);
   margin: auto;
 }
 
