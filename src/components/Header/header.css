@@ -49,11 +49,11 @@ svg path {
   stroke: var(--social-icon);
 }
 
-@media (hover: hover) {
-  /* .theme-toggle:hover > path {
+@media (hover: hover) and (pointer: fine) {
+  .theme-toggle:hover > path {
     fill: var(--social-icon-hover);
     stroke: var(--social-icon-hover);
-  } */
+  }
 }
 
 @media (max-width: 1200px) {
