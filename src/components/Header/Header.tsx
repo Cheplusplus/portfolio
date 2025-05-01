@@ -60,9 +60,9 @@ const Header = ({ setTheme }: HeaderProps) => {
           <li>
             <NavLink to={"projects"}>Projects</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to={"contact"}>Contact</NavLink>
-          </li>
+          </li> */}
           <li>
             <button id="theme-toggle" onClick={() => setTheme((theme) => (theme === "dark" ? "light" : "dark"))}>
               <svg className="theme-toggle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="nightModeIconTitle">
