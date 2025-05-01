@@ -11,7 +11,7 @@
 .payment-content {
   color: var(--text-primary);
   flex-basis: 0;
-  max-width: 100%;
+  width: clamp(0px, 100%, 430px);
 }
 
 .cards-container {
@@ -208,7 +208,7 @@ input:focus {
   }
 }
 
-@media (max-width: 469px) {
+@media (max-width: 620px) {
   .payment-container {
     padding: 1rem;
   }

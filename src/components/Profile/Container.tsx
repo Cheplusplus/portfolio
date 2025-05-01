@@ -11,6 +11,7 @@ import git from "../../assets/Git.svg";
 import ps from "../../assets/PostgresSQL.svg";
 import linux from "../../assets/Linux.svg";
 import ts from "../../assets/TypeScript.svg";
+import express from "../../assets/Express.svg";
 
 const Container = () => {
   return (
@@ -39,6 +40,7 @@ const Container = () => {
         <h2 className={styles.profile_heading2}>PREFERED TECH</h2>
         <div className={styles.icon_container}>
           <img src={ts} />
+          <img src={express} />
           <img src={next} />
           <img src={react} />
           <img src={python} />
