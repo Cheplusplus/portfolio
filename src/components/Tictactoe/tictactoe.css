@@ -108,6 +108,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .modal > button,
@@ -115,7 +116,7 @@
   background-color: white;
   opacity: 1;
   padding: 1rem;
-  min-width: 300px;
+  width: clamp(100px, 100%, 300px);
   border-radius: 8px;
   cursor: pointer;
 }
