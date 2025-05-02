@@ -7,7 +7,6 @@ import stripes from "../../assets/stripes.svg";
 import { cardNumberFormatter } from "../../lib/formatters.ts";
 import "./paymentform.css";
 import { motion } from "motion/react";
-import { style } from "motion/react-client";
 
 let uiState = {
   name: "",
