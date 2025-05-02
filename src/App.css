@@ -55,7 +55,7 @@ button {
 
 #page-container {
   z-index: 1;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .main-text {
@@ -148,8 +148,7 @@ span {
   justify-content: space-between;
   position: absolute;
   top: 70px;
-  padding: 1rem;
-  padding-top: 0;
+  padding: 0 1rem;
 }
 
 .swipe-icon path {
