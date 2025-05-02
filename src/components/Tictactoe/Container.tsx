@@ -20,6 +20,7 @@ const Container = () => {
     >
       <h2 className="main-text">BUILDING AN APP?</h2>
       <Content />
+      <h2 className="main-text">I BUILD MORE THAN JUST WEBSITES</h2>
     </motion.div>
   );
 };

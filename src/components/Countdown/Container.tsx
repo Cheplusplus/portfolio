@@ -30,6 +30,7 @@ const Container = () => {
         <h2 className="main-text">LAUNCHING YOUR BUSINESS?</h2>
         <TimeCardHolder />
         <SocialIcons />
+        <h2 className="main-text">YOU'LL NEED ONE OF THESE</h2>
       </motion.div>
     </AnimatePresence>
   );
