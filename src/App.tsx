@@ -8,7 +8,7 @@ import Modal from "./components/Modal/Modal";
 import { AnimatePresence } from "motion/react";
 
 function App() {
-  const [theme, setTheme] = useState<"light" | "dark" | "system">("light");
+  const [theme, setTheme] = useState<"light" | "dark" | "system">("dark");
   const [modalOpen, setModalOpen] = useState<boolean>(false);
 
   const openModal = () => {
