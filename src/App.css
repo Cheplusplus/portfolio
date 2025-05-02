@@ -149,6 +149,7 @@ span {
   position: absolute;
   top: 70px;
   padding: 1rem;
+  padding-top: 0;
 }
 
 .swipe-icon path {
