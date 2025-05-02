@@ -7,6 +7,7 @@ import stripes from "../../assets/stripes.svg";
 import { cardNumberFormatter } from "../../lib/formatters.ts";
 import "./paymentform.css";
 import { motion } from "motion/react";
+import { style } from "motion/react-client";
 
 let uiState = {
   name: "",
@@ -40,7 +41,7 @@ const Container = () => {
   };
 
   return (
-    <div>
+    <div className="page-content">
       <h2 className="main-text">NEED A STYLISH CHECKOUT?</h2>
       <div className="payment-container flex-box">
         <div className="cards-container">

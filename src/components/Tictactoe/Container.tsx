@@ -16,7 +16,6 @@ const Container = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        gap: "3rem",
       }}
     >
       <h2 className="main-text">BUILDING AN APP?</h2>

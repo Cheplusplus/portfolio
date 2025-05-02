@@ -26,6 +26,12 @@ form {
   flex-direction: column;
 }
 
+.page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 label {
   float: left;
   width: max-content;
