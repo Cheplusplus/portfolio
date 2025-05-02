@@ -59,8 +59,8 @@ const Container = () => {
           </motion.div>
         </div>
         <div className="payment-content">{!paymentSuccess ? <PaymentForm messages={messages} setMessages={setMessages} clearMessages={clearRecipientsMessages} paymentSucceeded={setPaymentSuccess} updateUI={updateUI} /> : <Success />}</div>
-        <h2 className="main-text">I'VE GOT YOU COVERED</h2>
       </div>
+      <h2 className="main-text">I'VE GOT YOU COVERED</h2>
     </div>
   );
 };
