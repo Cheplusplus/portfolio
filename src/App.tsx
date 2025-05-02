@@ -6,7 +6,6 @@ import bg_light from "./assets/layered-peaks-haikei(2).svg";
 import bg_dark from "./assets/layered-peaks-haikei(1).svg";
 import Modal from "./components/Modal/Modal";
 import { AnimatePresence } from "motion/react";
-import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark" | "system">("light");
@@ -60,7 +59,6 @@ function App() {
           )}
         </AnimatePresence>
         <Outlet />
-        <Analytics />
       </div>
     </div>
   );
