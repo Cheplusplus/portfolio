@@ -8,7 +8,7 @@ const Projects = () => {
         <Card isLeft isRow isCenter>
           <div className="flex-grow">
             <a href="https://zapread.online" target="_blank">
-              <h2 className="heading">ZapRead (WIP)</h2>
+              <h2 className="heading">ZapRead</h2>
             </a>
             <p>
               ZapRead is an AI-powered reading practice tool that helps you improve your comprehension with interactive challenges. Whether you’re reading academic texts, programming docs, or general content, ZapRead turns reading into an active,
