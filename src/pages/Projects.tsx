@@ -46,7 +46,7 @@ const Projects = () => {
           </div>
         </Card>
         <Card isLeft isRow isCenter>
-          <div className="flex-grow center">
+          <div className="flex-grow">
             <a href="https://ase-2024-group-c.vercel.app/" target="_blank">
               <h2 className="heading">Recipe Rush (Team Lead)</h2>
             </a>
