@@ -13,6 +13,7 @@ function Home() {
   const gotoNextPage = () => {
     if (pageNames.indexOf(page) + 1 >= pageNames.length) {
       setPage("profile");
+      navigate("/profile");
       return;
     }
     const nextPage = pageNames[pageNames.indexOf(page) + 1];
@@ -23,6 +24,7 @@ function Home() {
   const gotoPrevPage = () => {
     if (pageNames.indexOf(page) - 1 < 0) {
       setPage("tictactoe");
+      navigate("/tictactoe");
       return;
     }
     const prevPage = pageNames[pageNames.indexOf(page) - 1];
