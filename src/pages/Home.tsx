@@ -1,8 +1,4 @@
 import { useState } from "react";
-import PaymentContainer from "../components/PaymentForm/Container";
-import CountdownContainer from "../components/Countdown/Container";
-import TicTacToeContainer from "../components/Tictactoe/Container";
-import Profile from "../components/Profile/Container";
 import Arrows from "../components/Arrows/Arrows";
 import { useSwipeable } from "react-swipeable";
 import { Outlet, useNavigate } from "react-router";
@@ -38,13 +34,6 @@ function Home() {
     onSwipedLeft: gotoNextPage,
     onSwipedRight: gotoPrevPage,
   });
-
-  const pages = {
-    countdown: <PaymentContainer />,
-    payment: <CountdownContainer />,
-    tictactoe: <TicTacToeContainer />,
-    profile: <Profile />,
-  };
 
   return (
     <>
@@ -86,7 +75,6 @@ function Home() {
         </svg>
       </div>
       <div {...handlers} id="page-container">
-        {/* {pages[page]} */}
         <Outlet />
       </div>
     </>
