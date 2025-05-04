@@ -5,11 +5,14 @@ import TicTacToeContainer from "../components/Tictactoe/Container";
 import Profile from "../components/Profile/Container";
 import Arrows from "../components/Arrows/Arrows";
 import { useSwipeable } from "react-swipeable";
+import { Outlet, useNavigate } from "react-router";
 
-const pageNames: ["profile", "payment", "countdown", "tictactoe"] = ["profile", "payment", "countdown", "tictactoe"];
+const pageNames: ["profile", "checkout", "countdown-timer", "tictactoe"] = ["profile", "checkout", "countdown-timer", "tictactoe"];
 
 function Home() {
-  const [page, setPage] = useState<"payment" | "countdown" | "tictactoe" | "profile">("profile");
+  const [page, setPage] = useState<"checkout" | "countdown-timer" | "tictactoe" | "profile">("profile");
+
+  const navigate = useNavigate();
 
   const gotoNextPage = () => {
     if (pageNames.indexOf(page) + 1 >= pageNames.length) {
@@ -18,6 +21,7 @@ function Home() {
     }
     const nextPage = pageNames[pageNames.indexOf(page) + 1];
     setPage(nextPage);
+    navigate(`/${nextPage}`);
   };
 
   const gotoPrevPage = () => {
@@ -25,8 +29,9 @@ function Home() {
       setPage("tictactoe");
       return;
     }
-    const nextPage = pageNames[pageNames.indexOf(page) - 1];
-    setPage(nextPage);
+    const prevPage = pageNames[pageNames.indexOf(page) - 1];
+    setPage(prevPage);
+    navigate(`/${prevPage}`);
   };
 
   const handlers = useSwipeable({
@@ -81,7 +86,8 @@ function Home() {
         </svg>
       </div>
       <div {...handlers} id="page-container">
-        {pages[page]}
+        {/* {pages[page]} */}
+        <Outlet />
       </div>
     </>
   );
