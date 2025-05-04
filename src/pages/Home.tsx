@@ -29,7 +29,8 @@ function Home() {
     }
     const prevPage = pageNames[pageNames.indexOf(page) - 1];
     setPage(prevPage);
-    navigate(`/${prevPage}`);
+    if (prevPage !== "profile") navigate(`/${prevPage}`);
+    navigate("/");
   };
 
   const handlers = useSwipeable({
