@@ -13,7 +13,7 @@ function Home() {
   const gotoNextPage = () => {
     if (pageNames.indexOf(page) + 1 >= pageNames.length) {
       setPage("profile");
-      navigate("/profile");
+      navigate("/");
       return;
     }
     const nextPage = pageNames[pageNames.indexOf(page) + 1];
