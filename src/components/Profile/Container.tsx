@@ -4,7 +4,7 @@ import next from "../../assets/Next.js.svg";
 import django from "../../assets/Django.svg";
 import react from "../../assets/React.svg";
 import python from "../../assets/Python.svg";
-import tailwind from "../../assets/Tailwind CSS.svg";
+import css from "../../assets/CSS3.svg";
 import vite from "../../assets/Vite.js.svg";
 import figma from "../../assets/Figma.svg";
 import git from "../../assets/Git.svg";
@@ -52,7 +52,7 @@ const Container = () => {
           <img src={react} />
           <img src={python} />
           <img src={django} />
-          <img src={tailwind} />
+          <img src={css} />
           <img src={figma} />
           <img src={vite} />
           <img src={ps} />
