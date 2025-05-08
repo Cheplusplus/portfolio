@@ -9,6 +9,7 @@ This is the source code for my personal developer portfolio, built as a single-p
 - **react-swipeable** for mobile-friendly swipe interactions
 - Clean, responsive layout for both desktop and mobile users
 - Modular component-based structure for easy maintenance and scalability
+- Written in **TypeScript** for type safety and better developer experience
 
 ## ✦ Getting Started
 
@@ -33,11 +34,11 @@ The app will run at `http://localhost:3000`.
 ```bash
 src/
 ├── components/       # Reusable UI components
-├── pages/            # Main route views (e.g., Home, Projects, Contact)
+├── pages/            # Main route views (e.g., Home, Projects)
 ├── lib/              # Helper functions and modules
 ├── assets/           # Images and static files
-├── App.js            # Root component with routes
-├── index.js          # Entry point
+├── App.tsx            # Root component with routes
+├── main.tsx          # Entry point
 ```
 
 ## ✦ Dependencies
