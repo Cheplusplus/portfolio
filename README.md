@@ -34,6 +34,7 @@ The app will run at `http://localhost:3000`.
 src/
 ├── components/       # Reusable UI components
 ├── pages/            # Main route views (e.g., Home, Projects, Contact)
+├── lib/              # Helper functions and modules
 ├── assets/           # Images and static files
 ├── App.js            # Root component with routes
 ├── index.js          # Entry point
@@ -48,4 +49,4 @@ src/
 
 ## ✦ Contact
 
-Feel free to connect with me via [cheovermeyer.com](https://cheovermeyer.com) if you’d like to chat about opportunities or collaborations.
+Feel free to connect with me via [email](mailto:chephoto@rocketmail.com) if you’d like to chat about opportunities or collaborations.
