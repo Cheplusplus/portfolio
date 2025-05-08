@@ -1,6 +1,6 @@
 # Developer Portfolio – cheovermeyer.com
 
-This is the source code for my personal developer portfolio, built as a single-page React app. It serves as a showcase for my projects, skills, and experience as a full-stack developer with a focus on the React/Django stack.
+This is the source code for my personal developer portfolio, built as a single-page React app. It serves as a showcase for my projects, skills, and experience as a full-stack developer with a focus on the React/Django and Next.js stacks.
 
 ## ✦ Features
 
